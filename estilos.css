@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f0f7;
+    font-family: 'Poppins', sans-serif;
+    color: #35113f;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(135deg, #35113f, #701b3d);
+    text-align: center;
+    color: white;
+    padding: 45px 15px;
+    border-bottom: 5px solid #c49a54;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    letter-spacing: 5px;
+}
+
+header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #e8bfd8;
+    margin-top: 10px;
+}
+
+header p {
+    margin-top: 18px;
+    font-style: italic;
+}
+
+/* MENÚ */
+nav {
+    background: #4c1c50;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* PRESENTACIÓN */
+.presentacion {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.presentacion h2 {
+    font-family: 'Playfair Display', serif;
+    color: #701b3d;
+    font-size: 30px;
+}
+
+.presentacion p {
+    color: #765b78;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* CATÁLOGO VERTICAL */
+.catalogo {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CATEGORÍAS */
+.categoria {
+    background: #701b3d;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    margin: 30px 0 20px;
+    border-radius: 8px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* PRODUCTOS */
+.producto {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #701b3d;
+    box-shadow: 0 4px 12px #35113f20;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.detalles {
+    flex: 1;
+}
+
+.detalles h3 {
+    color: #701b3d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.detalles p {
+    font-size: 12px;
+    color: #806b83;
+    margin-bottom: 7px;
+}
+
+.codigo {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #8b668d !important;
+}
+
+.precio {
+    color: #4b174d !important;
+    font-size: 22px !important;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.etiqueta {
+    background: #701b3d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+/* INFORMACIÓN */
+.informacion {
+    background: #ead9e9;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 35px 0;
+    border-radius: 12px;
+}
+
+.informacion h2 {
+    color: #701b3d;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 12px;
+}
+
+.informacion p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #654b69;
+}
+
+/* PROMOCIÓN */
+.banner {
+    background: linear-gradient(120deg, #35113f, #701b3d);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin: 35px 0;
+}
+
+.banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+.banner p {
+    margin-top: 12px;
+    color: #f0d5e5;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #35113f;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 5px solid #c49a54;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+}
+
+footer p {
+    color: #dfc3df;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* DISEÑO RESPONSIVE */
+@media(max-width: 500px) {
+    .catalogo {
+        width: 94%;
+    }
+
+    .producto {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .producto img {
+        width: 105px;
+        height: 130px;
+    }
+
+    .detalles h3 {
+        font-size: 14px;
+    }
+
+    .detalles p {
+        font-size: 10px;
+    }
+
+    .precio {
+        font-size: 18px !important;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
